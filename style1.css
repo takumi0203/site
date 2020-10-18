@@ -1,0 +1,50 @@
+body{
+  background:black;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color:white;
+}
+img{
+  width: 250px;
+}
+
+header{
+  height: 100vh;
+  background-image: url(img/スカイチューブ3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+a{
+  color: white;
+}
+
+img{
+  border-radius: 5%;
+}
+
+.con1{
+  width: 100%;
+  margin: 2rem 0;
+}
+.center{
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
+.flex2{
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row-reverse;
+}
+
+
+footer{
+  text-align: center;
+  background-color: white;
+  color: black;
+}
