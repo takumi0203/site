@@ -3,11 +3,38 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="style1.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<title></title>
 </head>
 <body>
+	<script>
 
-	<header></header>
+		$(window).scroll(function (){
+			$('.con1').each(function(){
+					var elemPos = $(this).offset().top,
+						scroll = $(window).scrollTop(),
+						windowHeight = $(window).height();
+					if (scroll > elemPos - windowHeight + 100){
+						$(this).addClass('scrollin');
+					}else{
+						$(this).removeClass('scrollin');
+					}
+			});
+		});
+
+		$(function() {
+			$('header').on('mousemove', function(e) {
+				var y = e.offsetY;
+				$('#pic2').css('height',y + 'px');
+			});
+		});
+
+	</script>
+
+	<header>
+		<img src="img/スカイチューブ3.jpg" alt="" id="pic1">
+		<img src="img/スカイチューブ2.jpg" alt="" id="pic2">
+	</header>
 
 	<div class="con1">
 		<div class="center">
@@ -28,8 +55,11 @@
 					<p>ドラゴンボールより王道</p>
 				</div>
 
-					<p><a href="https://dq-dai.com/"><img src="img/daino.jpg" alt="">
+				<div class="picture">
+					<p><a href="https://dq-dai.com/">
+						<img src="img/daino.jpg" alt="">
 					</a></p>
+				</div>
 
 			</div>
 		</div>
@@ -45,8 +75,11 @@
 
 				</div>
 
-				<p><a href="https://youtu.be/BoZ0Zwab6Oc"><img src="img/gotcha.jpg" alt="">
-				</a></p>
+				<div class="picture">
+					<p><a href="https://youtu.be/BoZ0Zwab6Oc">
+						<img src="img/gotcha.jpg" alt="">
+					</a></p>
+				</div>
 
 
 			</div>
@@ -62,8 +95,11 @@
 					<p>全人類見よう！</p>
 				</div>
 
-				<p><a href="https://www.fate-sn.com/"><img src="img/hf3.jpg" alt="">
-				</a></p>
+				<div class="picture">
+					<p><a href="https://www.fate-sn.com/">
+						<img src="img/hf3.jpg" alt="">
+					</a></p>
+				</div>
 
 			</div>
 		</div>
@@ -74,6 +110,7 @@
 	<footer>
 		sagara takumi
 	</footer>
+
 
 </body>
 </html>
