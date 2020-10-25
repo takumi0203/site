@@ -24,10 +24,15 @@
 
 		$(function() {
 			$('header').on('mousemove', function(e) {
-				var y = e.offsetY;
-				$('#pic2').css('height',y + 'px');
+				var x = $('#pic1').width(),
+					y = e.offsetY,
+					WindowHeight = $(window).height(),
+					yPer = (y / WindowHeight) * 100;
+				$('#pic2').css('height',yPer + 'vh');
+				// $('#pic2').css('width',x + 'px');
 			});
 		});
+
 
 	</script>
 
@@ -56,7 +61,7 @@
 				</div>
 
 				<div class="picture">
-					<p><a href="https://dq-dai.com/">
+					<p><a href="https://dq-dai.com/" target="_blank" rel="noopener noreferrer">
 						<img src="img/daino.jpg" alt="">
 					</a></p>
 				</div>
@@ -76,7 +81,7 @@
 				</div>
 
 				<div class="picture">
-					<p><a href="https://youtu.be/BoZ0Zwab6Oc">
+					<p><a href="https://youtu.be/BoZ0Zwab6Oc" target="_blank" rel="noopener noreferrer">
 						<img src="img/gotcha.jpg" alt="">
 					</a></p>
 				</div>
@@ -96,7 +101,7 @@
 				</div>
 
 				<div class="picture">
-					<p><a href="https://www.fate-sn.com/">
+					<p><a href="https://www.fate-sn.com/" target="_blank" rel="noopener noreferrer">
 						<img src="img/hf3.jpg" alt="">
 					</a></p>
 				</div>
