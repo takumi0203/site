@@ -1,0 +1,56 @@
+<html>
+	<head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="slot.css">
+
+		<title>あからさまにじゃんけん</title>
+	</head>
+	<body>
+        <h1>誰がどう見てもじゃんけん</h1>
+		<div class="slot">
+			<div class="slot-frame">
+				<ul class="reels">
+                    <li><img src="img/gu.png" class="reel"></li>
+                    <li><img src="img/choki.png" class="reel"></li>
+                    <li><img src="img/pa.png" class="reel"></li>
+                    <li><img src="img/seven.png" class="reel"></li>
+                    <li><img src="img/gu.png" class="reel"></li>
+                    <li><img src="img/choki.png" class="reel"></li>
+                    <li><img src="img/pa.png" class="reel"></li>
+                    <li><img src="img/seven.png" class="reel"></li>
+                </ul>
+				<ul class="reels">
+                    <li><img src="img/choki.png" class="reel"></li>
+                    <li><img src="img/gu.png" class="reel"></li>
+                    <li><img src="img/seven.png" class="reel"></li>
+                    <li><img src="img/pa.png" class="reel"></li>
+                    <li><img src="img/choki.png" class="reel"></li>
+                    <li><img src="img/gu.png" class="reel"></li>
+                    <li><img src="img/seven.png" class="reel"></li>
+                    <li><img src="img/pa.png" class="reel"></li>
+                </ul>
+				<ul class="reels">
+                    <li><img src="img/pa.png" class="reel"></li>
+                    <li><img src="img/seven.png" class="reel"></li>
+                    <li><img src="img/choki.png" class="reel"></li>
+                    <li><img src="img/gu.png" class="reel"></li>
+                    <li><img src="img/pa.png" class="reel"></li>
+                    <li><img src="img/seven.png" class="reel"></li>
+                    <li><img src="img/choki.png" class="reel"></li>
+                    <li><img src="img/gu.png" class="reel"></li>
+                </ul>
+			</div>
+		</div>
+		<div>
+			<button type="button" class="btn-start">start</button>
+			<button type="button" class="btn-reset" disabled="true">reset</button>
+		</div>
+		<div>
+			<button type="button" class="btn-stop" data-val="0" disabled="true">stop 0</button>
+			<button type="button" class="btn-stop" data-val="1" disabled="true">stop 1</button>
+			<button type="button" class="btn-stop" data-val="2" disabled="true">stop 2</button>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="slot.js"></script>
+	</body>
+</html>

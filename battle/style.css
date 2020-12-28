@@ -1,0 +1,67 @@
+body{
+    background-color: black;
+    text-align: center;
+    font-family: 'HG行書体'		
+    ;
+}
+.background{
+    position: relative;
+}
+#honda{
+    width: 100%;
+    height:100vh;
+}
+.hand{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
+    text-align:center; 
+    display: none;
+}
+img{
+    width: 20%;
+    height: 20%;
+}
+h1{
+    color: white;
+}
+h2{
+    color: white;
+}
+.resultcase{
+    position: relative;
+}
+#resultMsg{
+    width: 100%;
+    position: absolute;
+    margin-top: 25vh;
+}
+#pepsiimg{
+    width: 14%;
+}
+#days{
+    margin: 3vh;
+    margin-left: 20vh;
+    padding: 3vh;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.7);
+}
+#pepsi{
+    margin: 3vh;
+    margin-left: 20vh;
+    padding: 3vh;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.7);
+}
+.result{
+    position: absolute;
+}
+#resetbutton{
+    margin-bottom: 20vh;
+}
